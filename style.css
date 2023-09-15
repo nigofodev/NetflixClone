@@ -9,6 +9,7 @@
 body{
     background: #000;
     color: #fff;
+    font-family:Arial, Helvetica, sans-serif;
 }
  /* header */
 
@@ -156,6 +157,7 @@ nav button{
 
 
 .container__section{
+    border-top: 6px solid #333;
     padding: 50px 12%;
     font-size: 22px;
 }
@@ -166,6 +168,7 @@ nav button{
     align-items: center;
     flex-wrap: wrap;
     padding: 50px 0;
+
 }
 .text__section{
     flex-basis: 50%;
@@ -177,12 +180,34 @@ nav button{
     width: 440px;
 }
 
+.text__section-2{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+    line-height: 35px;
+}
+
+.text__section-2 h2{
+    line-height: 58px;
+}
+
+.text__section-kids{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+    line-height: 35px;
+}
+
+.text__section-kids h2{
+    line-height: 58px;
+}
+
+
 
 .enjoy{
     margin-bottom: 20px;
     font-weight: 600;
     font-size: 50px;
 }
+
 
 .img__net{
     flex-basis: 50%;
@@ -194,4 +219,124 @@ nav button{
     width: 90%;
     margin: auto;
     height: 290px;
+}
+
+.line-container{
+    border-bottom: 6px solid #333
+}
+
+/* ----------------FAQ------------------ */
+
+.faq{
+    border-top: 6px solid #333;
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.faq h2{
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.accordion{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+    margin-bottom: 25px;
+}
+
+.accordion li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background:#303030 ;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.accordion .content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition:  max-height 0.5s, padding 0.5s;
+}
+
+.accordion input [type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.faq .email-signup{
+    max-width: 600px;
+}
+
+.faq small{
+    display: flex;
+    position: relative;
+    left: 140px;
+    font-size: 17px;
+    margin-bottom: 1px;
+}
+
+.form__down{
+    display: flex;
+    margin-top: 2px;
+    text-align: center;
+    align-items: center;    
+    position: relative;
+    right: 30px;
+}
+.form__down .email-signup{
+    background: #0f0f0f;
+}
+
+.form__down .btn-start img{
+    position: relative;
+    left: 150px;
+    height: 20px;
+}
+
+.form__down .btn-start{
+    display: flex;
+    padding: 12px 1px;
+    position: relative;
+    right: 10px;
+}
+
+
+/* -------------------------------FOOTER------------------------ */
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+}
+
+.footer-row{
+    display: flex;
 }
