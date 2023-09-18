@@ -221,14 +221,11 @@ nav button{
     height: 290px;
 }
 
-.line-container{
-    border-bottom: 6px solid #333
-}
+
 
 /* ----------------FAQ------------------ */
 
 .faq{
-    border-top: 6px solid #333;
     padding: 10px 12%;
     text-align: center;
     font-size: 18px;
@@ -284,10 +281,6 @@ input[type="radio"]{
     transition:  max-height 0.5s, padding 0.5s;
 }
 
-.accordion input [type="radio"]:checked + label + .content{
-    max-height: 600px;
-    padding: 30px 20px;
-}
 
 .faq .email-signup{
     max-width: 600px;
@@ -329,14 +322,103 @@ input[type="radio"]{
 
 /* -------------------------------FOOTER------------------------ */
 
+
+
 .container{
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    list-style: none;
-    text-decoration: none;
+    max-width: 1400px;
+    border-top: 6px solid #333;
+    height: 300px;
 }
 
 .footer-row{
     display: flex;
+    flex-wrap: wrap;   
+}
+
+.footer-links{
+    margin: 80px;
+    
+}
+
+.footer-links ul li{
+    list-style: none;
+    margin-top: 15px ;
+    font-size: 14px;
+    position: relative;
+    left: 90px;
+    bottom: 20px;
+}
+
+.footer-links ul li a{
+    color:#b3b3b3; 
+}
+
+.question-call{
+    margin-top: 45px;
+    font-size: 10px;
+    margin-left: 40px;
+    color: #b3b3b3;
+    position: relative;
+    top: 30px;
+    left: 129px;
+}
+
+.question-call a{
+    color: #b3b3b3;
+}
+
+.bottom-footer .btn-end{
+    align-items: center;
+    color: white;
+    background-color: #0f0f0f;
+    background: #0f0f0f;
+    border: 1px solid #fff;
+    padding: 4px 10px;
+    font-size: 15px ;
+    font-weight: 700;
+    position: relative;
+    left: 170px;
+    bottom: -20px;
+    width: 125px;
+    margin-bottom: 90px;
+    border-radius: 5px;
+    height: 30px;
+}
+
+.bottom-footer .btn-end img{
+    position: relative;
+    left: 15px;
+    height: 13px;
+}
+
+.netfllix-col{
+    position: relative;
+    left: 173px;
+    bottom: 40px;
+    color:#e7f7ff;
+    font-size: 14px;
+}
+
+
+/* --------media queries small devices-------- */
+
+@media only screen and (max-width: 600px){
+    
+    header{
+        width: 600px;
+    }
+
+    .logo{
+        width: 150px;
+        position: relative;
+        right: 35px;
+    }
+    nav button{
+        width: 90px;
+        position: relative;
+        right: 40px;
+        height: 50px;
+        margin: 10px;
+    }
+
 }
