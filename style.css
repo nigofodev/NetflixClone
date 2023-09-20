@@ -1,17 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
     border: 1px solid red;
 }
 body{
     background: #000;
     color: #fff;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
- /* header */
+    font-family: 'Roboto', sans-serif;
+} 
+ /*--------------------------- header----------------------------------------------------- */
 
 header{
     width: 100%;
@@ -51,72 +52,69 @@ nav button{
     background: transparent;
     border: 1px solid #fff;
     padding: 7px 10px;
-    font-size:15px ;
+    font-size:15px;
     font-weight: 700;
 }
 
 .signin-btn{
-    height: 37px;
-    margin-left: 20px;
-    font-size: 15px;
+    height: 35px;
+    font-size: 1rem;
     font-weight: 700;
 }
 
-.language-btn img{
-    margin-left: 10px;
-    width: 20px;
-}
-
 .container__form{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: block;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    margin-top: 100px;
+    width: 100%;
+    line-height: 30px;
+    margin-top: 130px;
 }
 
 .container__form h1{
-    font-size: 50px;
-    line-height: 50px;
+    font-size: 2.5rem;
     font-weight: 900;
-    max-width: 950px;
-    margin-bottom: 10px;
-    width: 900px;
+    margin-bottom: 30px;
 }
-
 .container__form h3{
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.container__form p{
+    font-size: 1rem;
     font-weight: 400;
     margin-bottom: 20px;
 }
 
 .email-container{
-    display:flex;
+    width: 100%;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
 .email-signup{
     background: #fff;
     border-radius: 4px;
-    display: flex;
-    align-items: center;
-    margin-top: 30px;
-    margin-left: 170px;
     background: transparent;
     border: 1px solid #fff;
     width: 350px;
     height: 50px;
-    
+        
 }
 
 .email-signup input{
-    margin-left: 20px;
+    margin-left: 1px;
     outline: 0;
     border: 0;
-    flex: 1;
+    display:flex;
+    justify-content: flex-start;
+    padding: 15px 20px;
     background: transparent;
     color: #fff;
-    width: 190px;
+    width: 390px;
     cursor:text;
 }
 .btn-start{
@@ -126,28 +124,18 @@ nav button{
     color: #fff;
     font-size: 16px;
     cursor: pointer;
-    padding: 15px 30px;
-    border-radius: 4px;
-    padding:12px 24px;
-    right: 10%;
     height: 50px;
     font-weight: 800;
-    width: 190px;
-    margin: 15px;
-    padding-left: 9px;
-    font-size: 20px;
-    margin: 20px;
-    margin-bottom: 0px;
+    width: 200px;
+    margin-left: 12px;
+    font-size: 1.5rem;
+    padding-right: 25px;
+}
+.right-arrow{
     position: relative;
-    top: 5px;
-    right: 18px;
+    right: 25px;
 }
 
-.btn-start .right-arrow{
-    position: absolute;
-    right: 6px;
-    padding-right: 20px;
-}
 
 /* end of the header */
 
@@ -158,57 +146,69 @@ nav button{
 
 .container__section, .container__section-2, .container__section-3, .container__section-4{
     border-top: 6px solid #333;
-    padding: 50px 12%;
-    font-size: 22px;
+    padding: 30px 150px;
+    font-size: 1.5rem;
 }
 
+.container__section .img__net img{
+    object-fit: cover;
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/dc1cf82d-97c9-409f-b7c8-6ac1718946d6/679d466c-5a82-4221-ab17-9aeff2ebb1ae/CO-en-20230911-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+}
+
+.container__section-2{
+    width: 100%;
+    display: flex;
+}
+.container__section-2 .row{
+    width: 100%;
+}
+.container__section-3 .img__net img{
+    height: 400px;
+}
 
 .row{
     display: flex;
     width: 100%;
     align-items: center;
-    flex-wrap: wrap;
-    padding: 50px 0;
-
-}
-.text__section{
-    flex-basis: 50%;
-    margin-bottom: 20px;
-    line-height: 35px;
+    padding: 60px 0;
 }
 
-.text__section p{
-    width: 440px;
+
+.text__section-3{
+    line-height: 30px;
+    width:399px;
+    font-weight: 900;
+    font-size: 1.9rem;
+    margin-right: 100px;
+    
+}
+.text__section-3 p{
+    margin-top: 10px;
+    font-size: 1.4rem;
+    font-weight: 400;
 }
 
-.text__section-2{
-    flex-basis: 50%;
-    margin-bottom: 20px;
-    line-height: 35px;
+.text__section-2 .enjoy-2{
+    line-height: 45px;
+    font-size: 2.5rem;
 }
 
-.text__section-2 h2{
-    line-height: 58px;
+.text__section-2 p{
+    line-height: 25px;
+    font-weight: 300;
+    font-size: 1.5rem;
 }
 
 .text__section-kids{
     flex-basis: 50%;
     margin-bottom: 20px;
-    line-height: 35px;
+    line-height: 25px;
 }
 
 .text__section-kids h2{
     line-height: 58px;
+    font-size: 2rem;
 }
-
-
-
-.enjoy{
-    margin-bottom: 20px;
-    font-weight: 600;
-    font-size: 50px;
-}
-
 
 .img__net{
     flex-basis: 50%;
@@ -217,7 +217,6 @@ nav button{
 
 .img__net img{
     display: block;
-    width: 90%;
     margin: auto;
     height: 290px;
 }
@@ -315,12 +314,6 @@ input[type="radio"]{
     top: 2px;
 }
 
-.form__down .btn-start{
-    display: flex;
-    padding: 12px 1px;
-    position: relative;
-    right: 10px;
-}
 
 
 /* -------------------------------FOOTER------------------------ */
@@ -361,9 +354,9 @@ input[type="radio"]{
     font-size: 10px;
     margin-left: 40px;
     color: #b3b3b3;
-    position: relative;
+    /* position: relative;
     top: 30px;
-    left: 129px;
+    left: 129px; */
 }
 
 .question-call a{
@@ -395,63 +388,27 @@ input[type="radio"]{
 }
 
 .netflix-col{
-    position: relative;
-    left: 173px;
+    /* position: relative;
+    left: 173px; */
     bottom: 40px;
     color:#e7f7ff;
     font-size: 14px;
-}
+} 
 
 
 /* --------media queries small devices-------- */
 
-@media screen and (max-width: 630px) {
-    header{
-        display: grid;
-        grid-template-rows: 120px;
-        align-items: center;
-    }
-
-    nav{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    nav .logo{
-        position: relative;
-        right: 40px;
-        height: 100px;
-    }
-
-    .container__form{
-        display: grid;
-        grid-template-rows: 100px 50px 20px;
-        align-items: center;
-        margin-top: 50px;
-        line-height: 20px;
-    }
-
-    .container__form h1{
-        font-size: 35px;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        left: 20px;
-        width: 310px;
-        margin-bottom: 40px;
-    }
-
-    .email-container{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 30px;
-    }
+@media screen and (min-width: 320px) and (max-width:640px){
     
-    .email-signup{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto;
+    header{
+        width: 400px;
+        height: 100vh;
     }
-}
+
+    } 
+
+
+
+
+
+
